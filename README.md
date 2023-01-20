@@ -1,4 +1,4 @@
-## WIX1003 FOP Assignment
+## WIX1002 FOP Assignment
 (a)  Number of jobs created/ended within a given time range.  
  
 (b)  Number of jobs by partitions, i.e. EPYC, Opteron and GPU.  
@@ -11,4 +11,4 @@
 - Average runtime submitted (usec: xxx from the lines that contain _slurm_rpc_submit_batch_job)
 - NodeList
 - Number of requests to kill jobs RequestKillJob (_slurm_rpc_kill_job: REQUEST_KILL_JOB)
-- Total Job & OtherError
+- Total Job & Other Error
