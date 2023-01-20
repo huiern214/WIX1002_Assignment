@@ -4,7 +4,6 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
         {
             "type": "java",
             "name": "Launch Current File",
@@ -96,6 +95,13 @@
             "name": "Launch E_NodeList",
             "request": "launch",
             "mainClass": "E_NodeList",
+            "projectName": "WIX1002_Assignment_3c3de7a0"
+        },
+        {
+            "type": "java",
+            "name": "Launch E_RequestKillJobs",
+            "request": "launch",
+            "mainClass": "E_RequestKillJobs",
             "projectName": "WIX1002_Assignment_3c3de7a0"
         }
     ]
