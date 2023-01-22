@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-//Question A (Number of jobs created, ended, error by months)
+//Question A (Number of jobs created & ended by months)
 public class A_JobCounter {
     public static void main(String[] args) {
         String logFile = "./src/extracted_log";
