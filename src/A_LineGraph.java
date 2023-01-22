@@ -5,13 +5,13 @@ import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.stage.Stage;
- 
- 
+
+
 public class A_LineGraph extends Application {
- 
+
     @Override 
     public void start(Stage stage) {
-        stage.setTitle("Line Chart for Number of Jobs Created");
+        stage.setTitle("Line Chart for Number of Jobs Created & Ended");
         //defining the axes
         final CategoryAxis xAxis = new CategoryAxis();
         final NumberAxis yAxis = new NumberAxis();
@@ -19,12 +19,12 @@ public class A_LineGraph extends Application {
         //creating the chart
         final LineChart<String, Number> lineChart = 
                 new LineChart<String,Number>(xAxis,yAxis);
-                
-        lineChart.setTitle("Number of Jobs Created");
+
+        lineChart.setTitle("Number of Jobs Created & Ended");
 
         XYChart.Series series1 = new XYChart.Series();
         series1.setName("Number of Jobs Created");
-        
+
         series1.getData().add(new XYChart.Data("June", 2191));
         series1.getData().add(new XYChart.Data("July", 1303));
         series1.getData().add(new XYChart.Data("August", 1179));
@@ -32,7 +32,7 @@ public class A_LineGraph extends Application {
         series1.getData().add(new XYChart.Data("October", 1777));
         series1.getData().add(new XYChart.Data("November", 900));
         series1.getData().add(new XYChart.Data("December", 551));
-        
+
         XYChart.Series series2 = new XYChart.Series();
         series2.setName("Number of Jobs Ended");
         series2.getData().add(new XYChart.Data("June", 1893));
@@ -42,27 +42,13 @@ public class A_LineGraph extends Application {
         series2.getData().add(new XYChart.Data("October", 1564));
         series2.getData().add(new XYChart.Data("November", 1092));
         series2.getData().add(new XYChart.Data("December", 452));
-        
-        XYChart.Series series3 = new XYChart.Series();
-        series3.setName("Number of Jobs Causing Error");
-        series3.getData().add(new XYChart.Data("June", 38));
-        series3.getData().add(new XYChart.Data("July", 0));
-        series3.getData().add(new XYChart.Data("August", 56));
-        series3.getData().add(new XYChart.Data("September", 9));
-        series3.getData().add(new XYChart.Data("October", 5));
-        series3.getData().add(new XYChart.Data("November", 35));
-        series3.getData().add(new XYChart.Data("December", 0));
-        
+
         Scene scene  = new Scene(lineChart,800,600);       
-        lineChart.getData().addAll(series1, series2, series3);
-        
-        
-    
-       
+        lineChart.getData().addAll(series1, series2);
         stage.setScene(scene);
         stage.show();
     }
- 
+
     public static void main(String[] args) {
         launch(args);
     }

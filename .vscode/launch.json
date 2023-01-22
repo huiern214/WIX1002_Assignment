@@ -99,6 +99,14 @@
         },
         {
             "type": "java",
+            "name": "Launch E_NodeListTable",
+            "request": "launch",
+            "mainClass": "E_NodeListTable",
+            "projectName": "WIX1002_Assignment_3c3de7a0",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-19/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
             "name": "Launch E_RequestKillJobs",
             "request": "launch",
             "mainClass": "E_RequestKillJobs",
