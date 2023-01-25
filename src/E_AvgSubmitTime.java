@@ -24,7 +24,6 @@ public class E_AvgSubmitTime {
         } catch (IOException e) {
             System.out.println("error");
         }
-
     }
 
     public static boolean checkSubmitLine(String line) {

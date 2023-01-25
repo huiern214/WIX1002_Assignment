@@ -26,9 +26,11 @@ public class E_CalcError {
             int count2=0;
 
             for(String i : line){
+                // Total Error
                 if(i.contains("error:")){
                     count1++;
                 }    
+                // Job Error
                 if(i.contains("error: This association")){
                     count2++;
                 }  

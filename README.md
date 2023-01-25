@@ -9,6 +9,6 @@
  
 (e)  Other statistical data that you can extract.  
 - Average runtime submitted (usec: xxx from the lines that contain _slurm_rpc_submit_batch_job)
+- Total no. of error (Job & Other Error)
 - NodeList
-- Number of requests to kill jobs RequestKillJob (_slurm_rpc_kill_job: REQUEST_KILL_JOB)
-- Total Job & Other Error
+- Number of requests to kill jobs (_slurm_rpc_kill_job: REQUEST_KILL_JOB)
